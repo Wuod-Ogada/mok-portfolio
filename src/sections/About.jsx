@@ -4,13 +4,13 @@ import { rating2, rating3 } from '../assets/images'
 const About = () => {
   return (
     <>
-      <section id="aboutMe" className="justify-center md:h-[70vh]">
+      <section id="aboutMe" className="section justify-center">
         <div className="mx-auto md:w-[80vw]" >
           <div className="md:w-[80%] mx-auto my-9 md:justify-center">
             <h4 className="text-4xl text-center font-headings">About Me.</h4>
           </div>
 
-          <div className="md:w-[90%] md:mx-auto md:flex my-9 md:justify-between bg-[#1E201E]"> {/*About Us Upper section container*/}
+          <div className=" md:w-[90%] md:mx-auto md:flex my-9 md:justify-between bg-[#1E201E]"> {/*About Us Upper section container*/}
             <div className="bg-[#B99470] md:w-[35%] p-[15px] rounded-md">
               <h4 className='text-[#04060f] text-2xl text-center font-semibold'>Skills</h4>
               <ul className='mx-[20px]'>

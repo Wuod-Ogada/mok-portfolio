@@ -3,7 +3,7 @@ import { logo, menu } from "../assets/icons"
 const Navbar = () => {
   return (
     <>
-      <header className="m-5 mx-auto md:w-[85%] flex justify-between px-[20px] items-center">
+      <header className="navsect">
         <div className="w-full md:w-[30%] flex items-center justify-between">
           <a>
             <img src={logo} alt="" className="w-[70px]"/>

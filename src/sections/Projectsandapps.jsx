@@ -2,7 +2,7 @@ import apps from '../apps.json'
 
 const Projectsandapps = () => {
   return (
-  <section id="projects" className='md:h-[80vh] py-[25px]'>
+  <section id="projects" className='section md:h-[80vh] py-[25px]'>
     <div className='md:w-[90%] mx-auto'>
       <div >
         <h2 className='text-center text-4xl pb-5'>Projects</h2>
@@ -10,13 +10,16 @@ const Projectsandapps = () => {
       {/* project cards wrapper */}
       <div  className='md:flex gap-4'> {/* bg-[`url(${require('{app.image}')})`] */}
         {apps.map((app, index) => (
-          <div key ={index} className=' p-[15px] ' >
-            {/* style={{ backgroundImage: `url(/images/${app.image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} */}
-            <div className=''>
-              <img src={`/images/${app.image}`} alt={app.title} className="project-image" /> 
-            </div>
+          <div key ={index} className=' p-[15px] my-[20px]'  >
+            {/* style={{ backgroundImage: `url(./images/${app.image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} */}
 
-            <div className='m-5 bg-[#B6A28E]'>
+            <div className=''>
+              <img src={`./images/${app.image}`}
+                  alt={app.title}
+                  className="w-full h-[280px] object-cover rounded-lg" /> 
+            </div> 
+
+            <div className='p-5 bg-[#B6A28E] w-full md:rounded-b-md'>
               <h1>{app.title}</h1>
               <p className="brief-disc">
                 {app.about}

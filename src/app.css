@@ -4,4 +4,6 @@ body {
   background-color: #021526;
   color: #F5F5F7;
   font-family: general;
+  display: flex;
+  flex-direction: column;
 }

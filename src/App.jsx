@@ -7,9 +7,17 @@ import Projectsandapps from "./sections/Projectsandapps";
 const App = () => {
   return (
     <>
+    <section>
       <Navbar />
+    </section>
+    <section>
       <Hero />
+    </section>
+    <section>
       <About />
+    </section>
+      
+      
       <Projectsandapps />
       <Footer />
     </>

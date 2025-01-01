@@ -5,18 +5,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.navsect {
+  @apply m-5 mx-auto md:w-[85%] flex justify-between px-[20px] items-center;
+}
+
 .skill-icon {
   @apply my-2 flex justify-between;
 }
 
-section {
-  @apply my-[25px];
+.section {
+  @apply my-[25px] min-h-[75vh] items-center;
 }
 
 .footers {
-  @apply my-[10px];
+  @apply my-[25px] items-center pl-4;
 }
 
 .project-image {
-  @apply object-cover;
+  @apply object-cover w-[300px];
 }

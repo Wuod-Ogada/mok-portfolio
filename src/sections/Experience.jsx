@@ -2,7 +2,7 @@ import { experience } from "../constants";
 
 const Experience = () => {
   return (
-    <section>
+    <section className="section">
       <div>
         <h2>Work Experience</h2>
       </div>
