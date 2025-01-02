@@ -8,7 +8,7 @@ const Projectsandapps = () => {
         <h2 className='text-center text-4xl pb-5'>Projects</h2>
       </div>
       {/* project cards wrapper */}
-      <div  className='md:flex gap-4'> {/* bg-[`url(${require('{app.image}')})`] */}
+      <div  className='md:flex gap-4'> 
         {apps.map((app, index) => (
           <div key ={index} className=' p-[15px] my-[20px]'  >
             {/* style={{ backgroundImage: `url(./images/${app.image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} */}

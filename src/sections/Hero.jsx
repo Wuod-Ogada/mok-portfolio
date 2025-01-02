@@ -16,7 +16,8 @@ const Hero = () => {
             I build scalable web applications intended to bolster productivity and simplify tasks!
           </p>
           <div className=''>
-            <a href="" className='font-subheading bg-[#B99470] p-[10px] rounded-md'>Let&apos;s work together!</a>
+            <a href="" className='font-subheading bg-[#B99470] p-[10px] rounded-md'>Work with Me!</a> 
+            {/* Let&apos;s work together */}
           </div>
         </div>
 
