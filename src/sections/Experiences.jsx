@@ -1,6 +1,6 @@
-import { experience } from "../constants";
+import experience from "../experience.json";
 
-const Experience = () => {
+const Experiences = () => {
   return (
     <section className="section">
       <div>
@@ -21,14 +21,15 @@ const Experience = () => {
       
       <div > {/* jobs*/}
         { experience.map((experience) => (
-          <div key={experience.id}>
-            <div> {/* Job title, role, location */}
+          <div key={experience.id} className="md:flex ">
+            <div className="flex justify-between">
                 <div>
                   {experience.title}
                 </div>
                 <div>
                   <div>{experience.company}</div>
                   <div>{experience.location}</div>
+                  <div>{experience.duration}</div>
                 </div>
             </div>
             <div>
@@ -36,12 +37,12 @@ const Experience = () => {
                 {experience.description}
               </p>
             </div>
-          </div>
+         </div>
         )) }
       </div>
-      
+
     </section>
   );
 }
 
-export default Experience;
+export default Experiences;

@@ -6,21 +6,33 @@
 @tailwind utilities;
 
 .navsect {
-  @apply m-5 mx-auto md:w-[85%] flex justify-between px-[20px] items-center;
+  @apply my-5 mx-auto md:w-[85%] flex justify-between px-[20px] items-center;
 }
 
 .skill-icon {
   @apply my-2 flex justify-between;
 }
 
+.navlink {
+  @apply cursor-auto hover:bg-[] ;
+}
+
+.activeMenu {
+  @apply w-full text-xl rounded-b-md bg-[#B99470] h-[180px] flex justify-center;
+}
+.moblink {
+  @apply my-2 flex gap-2 items-center text-[#021526];
+}
+
 .section {
-  @apply my-[25px] min-h-[75vh] items-center;
+  @apply my-[25px] items-center;
 }
 
 .footers {
-  @apply my-[25px] items-center pl-4;
+  @apply flex items-center pl-4 my-[25px] md:my-0;
 }
 
 .project-image {
   @apply object-cover w-[300px];
 }
+

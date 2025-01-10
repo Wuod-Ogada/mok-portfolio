@@ -1,10 +1,12 @@
-import { logo, menu } from "../assets/icons"
+import { logo, menu } from "../assets/icons";
+import MobileMenu from "./MobileMenu";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <>
       <header className="navsect">
-        <div className="w-full md:w-[30%] flex items-center justify-between">
+        <div className="w-full md:w-[30%] md:ml-0 flex items-center justify-between">
           <a>
             <img src={logo} alt="" className="w-[70px]"/>
           </a>
@@ -14,15 +16,17 @@ const Navbar = () => {
           </a>
         </div>
 
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6 text-xl">
           <ul className="hidden md:flex space-x-5">
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><Link to={`#aboutMe`} className="navlink">About Me</Link></li>
+            <li><Link to="#projects" className="navlink">Projects</Link></li>
           </ul>
-          <a href="#contactMe">Contact Me!</a>
+          <Link to="/contact-Me" className="navlink">Contact Me!</Link>
         </nav>
             
      </header>
+
+     <MobileMenu />
     </>
   )
 }

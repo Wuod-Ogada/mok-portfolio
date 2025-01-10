@@ -2,6 +2,29 @@ import { codingicons, jscript, mysql2, nodejs, react } from '../assets/icons';
 
 import { driver, gear, ohs, supportrep, trashcan1, wallet, rating2, rating3 } from "../assets/images";
 
+export const menuList = [
+  {
+    id: 1,
+    href: "",
+    name: "About Me"
+  },
+  {
+    id: 2,
+    href: "/projects",
+    name: "Projects"
+  },
+  {
+    id: 3,
+    href: "/work_experience",
+    name: "Work Experience"
+  },
+  {
+    id: 3,
+    href: "/contact_me",
+    name: "Contact Me!"
+  },
+];
+
 export const skills = [
   {
     id: 1,

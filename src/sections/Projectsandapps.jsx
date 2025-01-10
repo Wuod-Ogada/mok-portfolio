@@ -1,11 +1,13 @@
-import apps from '../apps.json'
+import apps from '../apps.json';
+import {Link} from 'react-router-dom';
+
 
 const Projectsandapps = () => {
   return (
   <section id="projects" className='section md:h-[80vh] py-[25px]'>
     <div className='md:w-[90%] mx-auto'>
       <div >
-        <h2 className='text-center text-4xl pb-5'>Projects</h2>
+        <h2 className='text-center text-4xl pb-5 font-headings'>Projects</h2>
       </div>
       {/* project cards wrapper */}
       <div  className='md:flex gap-4'> 
@@ -20,18 +22,18 @@ const Projectsandapps = () => {
             </div> 
 
             <div className='p-5 bg-[#B6A28E] w-full md:rounded-b-md'>
-              <h1>{app.title}</h1>
-              <p className="brief-disc">
+              <h1 className='font-headings text-2xl text-[#021526] font-semibold'>{app.title}</h1>
+              <p className="brief-disc font-general">
                 {app.about}
               </p>
-              <div>
-                <a> Read more...</a>
+              <div className='bg-[#9c6e4d] w-full text-center rounded-md'>
+                <Link to={`/project/${app.id}`} className=' px-[15px] font-subheading text-[#090f1d] font-semibold text-sm'> Read more</Link>
               </div>
             </div>
 
             <div className="hidden"> {/* modal - show onclick*/}
               <div>
-                <h4>{app.title}</h4> <a href="">closing Icon</a>
+                <h4>{app.title}</h4> <a href=''>closing Icon</a>
               </div>
               <p className="about-app hidden">
                 {app.description}

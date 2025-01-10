@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "image": "",
+    "title": "Heavy Truck Driver",
+    "company": "Himmah for Container Rentals",
+    "location": "Riyadh, Saudi Arabia",
+    "duration": "Dec, 2021- Jan, 2024",
+    "duties": ""
+  },
+  {
+    "id": "2",
+    "image": "",
+    "title": "Junior Developer",
+    "company": "Daktos Limited",
+    "location": "Nairobi, Kenya",
+    "duration": "Jan, 2021 - Nov, 2021",
+    "duties": ""
+  },
+  {
+    "id": "3",
+    "image": "",
+    "title": "Project Coordinator",
+    "company": "Digital Telematics Ltd",
+    "location": "Nairobi, Kenya",
+    "duration": "Oct, 2018 - Nov, 2020",
+    "duties": ""
+  },
+  {
+    "id": "4",
+    "image": "",
+    "title": "Technical Support Representative",
+    "company": "Digital Telematics Ltd",
+    "location": "Nairobi, Kenya",
+    "duration": "Mar, 2018 - Sep, 2018",
+    "duties": ""
+  }
+]
