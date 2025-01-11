@@ -1,6 +1,6 @@
 import { jscript, react, mysql2, nodejs } from '../assets/icons';
 import { rating2, rating3 } from '../assets/images';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 
 const About = () => {
   return (

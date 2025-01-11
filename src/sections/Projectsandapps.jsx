@@ -1,5 +1,5 @@
 import apps from '../apps.json';
-import {Link} from 'react-router-dom';
+import {Link} from 'react-router';
 
 
 const Projectsandapps = () => {
