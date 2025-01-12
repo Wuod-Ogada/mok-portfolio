@@ -1,7 +1,7 @@
 import { FaBriefcase, FaFolderOpen } from 'react-icons/fa';
 import { Link } from 'react-dom';
 
-const MobileMenu = () => {
+const MobMenu = () => {
   return (
     <div className="hidden">
       <ul className="my-5 items-center">
@@ -14,4 +14,4 @@ const MobileMenu = () => {
   )
 }
 
-export default MobileMenu
+export default MobMenu

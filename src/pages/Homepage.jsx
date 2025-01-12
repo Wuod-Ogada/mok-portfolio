@@ -9,7 +9,7 @@ const Homepage = () => {
      <About />
      <Projectsandapps />
     </>
-  )
+  );
 }
 
 export default Homepage

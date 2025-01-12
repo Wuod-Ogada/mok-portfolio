@@ -1,6 +1,5 @@
 import { logo, menu } from "../assets/icons";
-import MobileMenu from "./MobileMenu";
-import {Link} from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -25,8 +24,6 @@ const Navbar = () => {
         </nav>
             
      </header>
-
-     <MobileMenu />
     </>
   )
 }
