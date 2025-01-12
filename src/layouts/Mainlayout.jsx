@@ -5,8 +5,14 @@ import Footer from '../sections/Footer';
 const Mainlayout = () => {
   return (
     <>
-      <Navbar />
-      <Outlet />
+      <header>
+        <Navbar />
+      </header>
+
+      <main>
+        <Outlet />
+      </main>
+      
       <Footer />
     </>
   )
