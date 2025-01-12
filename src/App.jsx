@@ -1,30 +1,35 @@
-import { Routes, Route, RouterProvider } from "react-router-dom";
-import { createBrowserRouter, createRoutesFromElements } from "react-router-dom";
-
-// import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Mainlayout from './layouts/Mainlayout';
 import HomePage from './pages/HomePage';
 import NotFound from './pages/NotFound';
-//import Experiencepage from './pages/Experiencepage'
-// import Viewprojectpage from './pages/Viewprojectpage'
-//import Contactpage from './pages/Contactpage'
+// import Experiencepage from './pages/Experiencepage';
+// import Contactpage from './pages/Contactpage';
 
-  const router = createBrowserRouter(
-  createRoutesFromElements( 
-    <Routes path='/' element={<Mainlayout />} >
-      <Route index element={<HomePage />} />
-      <Route path="*" element={<NotFound />} />
-
-      {/* <Route path='/work-experience' element={<Experiencepage/>} />  */}
-      {/* <Route path='/contact-me' element={<Contactpage/>} />   */}
-    </Routes>
-  ));
-
- {/* const router = createBrowserRouter([
-    { path: "/", element: <HomePage /> },
-    { path: "*", element: <NotFound /> }
-  ]);*/}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Mainlayout />,
+    children: [
+      {
+        index: true,  // This is equivalent to `<Route index element={<HomePage />} />`
+        element: <HomePage />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+      // Add other routes here
+      // {
+      //   path: '/work-experience',
+      //   element: <Experiencepage />
+      // },
+      // {
+      //   path: '/contact-me',
+      //   element: <Contactpage />
+      // },
+    ]
+  }
+]);
 
 const App = () => {
   return (
@@ -32,6 +37,6 @@ const App = () => {
       <RouterProvider router={router} />
     </>
   );
-}
+};
 
-export default App
+export default App;
