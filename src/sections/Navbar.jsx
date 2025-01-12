@@ -6,9 +6,9 @@ const Navbar = () => {
     <>
       <header className="navsect">
         <div className="w-full md:w-[30%] md:ml-0 flex items-center justify-between">
-          <a>
+          <Link to='/'>
             <img src={logo} alt="" className="w-[70px]"/>
-          </a>
+          </Link>
 
           <a className="block md:hidden">
             <img src={menu} alt="" className="md:hidden w-8"/>
@@ -17,8 +17,8 @@ const Navbar = () => {
 
         <nav className="hidden md:flex space-x-6 text-xl">
           <ul className="hidden md:flex space-x-5">
-            <li><Link to={`#aboutMe`} className="navlink">About Me</Link></li>
-            <li><Link to="#projects" className="navlink">Projects</Link></li>
+            <li><Link to='' className="navlink">About Me</Link></li>
+            <li><Link to="" className="navlink">Projects</Link></li>
           </ul>
           <Link to="/contact-Me" className="navlink">Contact Me!</Link>
         </nav>
