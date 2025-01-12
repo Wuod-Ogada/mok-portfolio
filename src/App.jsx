@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Mainlayout from './layouts/Mainlayout';
 
@@ -9,15 +9,18 @@ import NotFound from './pages/NotFound';
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Mainlayout />}>
-        <Route index element={<HomePage />} />
-        <Route path="*" element={<NotFound />} />
-        {/* Add other routes here */}
-        {/* <Route path='/work-experience' element={<Experiencepage />} /> */}
-        {/* <Route path='/contact-me' element={<Contactpage />} /> */}
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Mainlayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
+          {/* Add other routes here */}
+          {/* <Route path='/work-experience' element={<Experiencepage />} /> */}
+          {/* <Route path='/contact-me' element={<Contactpage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
+    
   );
 };
 
