@@ -1,6 +1,8 @@
-import { logo, menu } from "../assets/icons";
+import { logo, } from "../assets/icons";
 import { Link } from 'react-router-dom';
 import { HashLink } from "react-router-hash-link";
+import { FaBarsStaggered } from "react-icons/fa6";
+
 
 const Navbar = () => {
   return (
@@ -11,9 +13,7 @@ const Navbar = () => {
             <img src={logo} alt="" className="w-[70px]"/>
           </Link>
 
-          <a className="block md:hidden">
-            <img src={menu} alt="" className="md:hidden w-8"/>
-          </a>
+          <FaBarsStaggered className="block md:hidden w-10"/>
         </div>
 
         <nav className="hidden md:flex space-x-6 text-xl">
