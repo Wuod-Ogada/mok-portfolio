@@ -1,5 +1,6 @@
 import { logo, menu } from "../assets/icons";
 import { Link } from 'react-router-dom';
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
   return (
@@ -17,10 +18,10 @@ const Navbar = () => {
 
         <nav className="hidden md:flex space-x-6 text-xl">
           <ul className="hidden md:flex space-x-5">
-            <li><Link to='' className="navlink">About Me</Link></li>
-            <li><Link to="" className="navlink">Projects</Link></li>
+            <li><HashLink smooth to='/#aboutMe' className="navlink">About Me</HashLink></li>
+            <li><HashLink smooth to="/#projects" className="navlink">Projects</HashLink></li>
           </ul>
-          <Link to="/contact-Me" className="navlink">Contact Me!</Link>
+          <Link to={`/contact-Me`} className="navlink">Contact Me!</Link>
         </nav>
             
      </header>
