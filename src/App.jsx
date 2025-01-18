@@ -13,10 +13,10 @@ const App = () => {
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
-          <Route path="/" element={<Mainlayout />}>
-            <Route index element={<HomePage />} />
+          <Route element={<Mainlayout />}>
+            <Route path="/"  element={<HomePage />} />
             <Route path="*" element={<NotFound />} />
-            <Route path='/work-experience' element={<Experiencepage />} />
+            <Route path="work-experience" element={<Experiencepage />} />
             {/* Add other routes here */}
             {/* <Route path='/contact-me' element={<Contactpage />} /> */}
           </Route>
@@ -26,5 +26,6 @@ const App = () => {
     
   );
 };
+
 
 export default App;
