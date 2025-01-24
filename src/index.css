@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Shippori+Mincho&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section {
+  @apply my-6 pt-[20px];
+}
+
+.section-title {
+  @apply text-center my-5 text-3xl md:text-4xl font-heading;
+}
+
+.project-title {
+  @apply p-3 font-heading text-[#07171d] text-lg;
+}
+
+ .project-intro {
+  @apply px-3;
+}
+
+.project-button {
+  @apply text-end mr-3 py-2;
+}
