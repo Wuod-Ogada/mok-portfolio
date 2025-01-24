@@ -12,7 +12,7 @@ const App = () => {
       <BrowserRouter>
 
           <Routes>
-            <Route path='/mok-portfolio' element={<MainLayout />}>
+            <Route path='/' element={<MainLayout />}>
               <Route index element={<Home />} /> 
               <Route path="/work_experience" element={<ExperiencePage />} />
               <Route path="/Project/:title" element={<ViewProject />} />
