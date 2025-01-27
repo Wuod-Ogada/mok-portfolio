@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="">
+      <div className="" id="Home">
 
         <div className="flex justify-between items-center w-full mx-auto">
           <NavLink to="/">
