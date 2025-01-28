@@ -28,7 +28,7 @@ const navigate = useNavigate();
         </div>
 
         <div className='mb-5'>
-          <img src={logo} width={45} alt="logo" />
+          <img src={logo} className='w-14 md:w-16' alt="logo" />
         </div>
       </div>
     </div>
