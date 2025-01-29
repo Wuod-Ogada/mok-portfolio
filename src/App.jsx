@@ -15,8 +15,8 @@ const App = () => {
       <BrowserRouter>
     <NavHeader /> 
           <Routes>
-            <Route>
-              <Route index element={<Home />} /> 
+            <Route >
+              <Route path='/' element={<Home />} /> 
               <Route path="/work_experience" element={<ExperiencePage />} />
               <Route path="/Project/:title" element={<ViewProject />} />
               <Route path='/define_the_project' element={<WorkWithMePage />} />
