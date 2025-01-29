@@ -27,7 +27,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-center md:text-end pt-4">
-            <NavLink href="/work_experience" className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
+            <NavLink to="/work_experience" className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
           </div>
         </div>
       </div>

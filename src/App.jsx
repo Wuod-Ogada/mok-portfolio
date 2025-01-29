@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // import NavHeader from './components/NavHeader';
 // import Footer from './components/Footer';
@@ -12,7 +12,7 @@ import WorkWithMePage from './pages/WorkWithMePage';
 const App = () => {
   return (
     <>
-      <BrowserRouter>
+      
     {/* <NavHeader />  */}
           <Routes>
             <Route path='/' element={<MainLayout />} >
@@ -20,10 +20,10 @@ const App = () => {
               <Route path="/work_experience" element={<ExperiencePage />} />
               <Route path="/Project/:title" element={<ViewProject />} />
               <Route path='/define_the_project' element={<WorkWithMePage />} />
-            </Route>   
+            </Route>
           </Routes>
     {/* <Footer /> */}
-      </BrowserRouter>
+  
     </>
   )
 }
