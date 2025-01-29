@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import { codingSkills } from "../assets/assets"
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-center md:text-end pt-4">
-            <a href="/work_experience" className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</a>
+            <NavLink href="/work_experience" className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
           </div>
         </div>
       </div>
