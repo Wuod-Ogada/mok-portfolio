@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const Navbar = () => { 
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
@@ -26,11 +26,11 @@ const Navbar = () => {
             </ul>
               <button className="bg-[#997C70] px-3 py-2 rounded-md"><NavHashLink smooth to="/#Contact_me">Contact Me!</NavHashLink></button>
           </nav>
-          <FaBarsStaggered className="rotate-180 w-7 block md:hidden" onClick={()=> setIsMenuOpen(!isMenuOpen)}/>   
+          <FaBarsStaggered className="rotate-180 w-7 block md:hidden" onClick={()=> setOpenMenu(!openMenu)}/>   
         </div>
        
         {/* Mobile Responsive Menu */}
-          <ResponsiveMenu openMenu={isMenuOpen} isMenuOpen={setIsMenuOpen}/>
+          <ResponsiveMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
           
       </div>
 
