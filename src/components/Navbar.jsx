@@ -30,7 +30,7 @@ const Navbar = () => {
         </div>
        
         {/* Mobile Responsive Menu */}
-          <ResponsiveMenu openMenu={isMenuOpen} />
+          <ResponsiveMenu openMenu={isMenuOpen} isMenuOpen={setIsMenuOpen}/>
           
       </div>
 
