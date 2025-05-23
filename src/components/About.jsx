@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom"
 import { codingSkills } from "../assets/assets"
 
 const About = () => {
+
+   
   return (
     <>
     <section className="section">
@@ -27,7 +29,7 @@ const About = () => {
             </p>
           </div>
           <div className="text-center md:text-end pt-4">
-            <NavLink to="/work_experience" className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
+            <NavLink to="/work_experience" onClick={()=> window.scrollTo(0,0)} className="bg-[#B99470] px-[15px] py-3 rounded-md font-subheading">Work Experience</NavLink>
           </div>
         </div>
       </div>

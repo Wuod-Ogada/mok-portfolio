@@ -70,7 +70,7 @@ export const experiences = [
     location: "Riyadh, Saudi Arabia",
     duration: "Dec, 2021 - Jan, 2024",
     skills : [ 
-        "Air Brake Diagnosis", "Attention to Detail", "Knowledge of regulations", "Time Management", 
+        "Air Brake Diagnosis", "Error code Comprehension", "Knowledge of Traffic regulations", "Time Management", "Using Navigation systems"
     ],
     roles: [
       "Operated heavy trucks for container transport, ensuring compliance with safety and regulatory standards.",

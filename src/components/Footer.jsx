@@ -16,7 +16,7 @@ const navigate = useNavigate();
           <ul className='text-[#0f2542]'>
             <li><NavLink to="/#Header">Home</NavLink></li>
             <li><NavHashLink smooth to="/#About">About</NavHashLink></li>
-            <li><NavLink to="/work_experience">My Work Experience</NavLink></li>
+            <li><NavLink onClick={() => {navigate("/work_experience"); scrollTo(0,0)}}>My Work Experience</NavLink></li>
           </ul>
 
           <button onClick={()=> navigate('/define_the_project')} className='mt-3 bg-[#634e2ebe] px-3 rounded-md text-[#081629f3]'>Work With Me</button>
